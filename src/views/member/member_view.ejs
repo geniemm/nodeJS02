@@ -1,0 +1,11 @@
+<%- include("../header") %>
+
+<h3>상 세 정 보</h3>
+id: <%= member.ID %> <br>
+pwd: <%= member.PWD %> <br>
+name: <%= member.NAME %> <br>
+addr: <%= member.ADDR %> <br>
+<a href="/member/list">목록 이동</a>
+<a href="/member/modify_form?id=<%= member.ID %>">수정</a>
+<!--?id=(여기에공백금지)<%= member.ID %>-->
+<a href="/member/delete/<%= member.ID %>">삭제</a>
